@@ -14,7 +14,11 @@ class PostController extends Controller
     public function index()
     {
         $categories = Category::get();
-        return view('dashboard', ['categories' => $categories]);
+        $posts = Post::take(3)->get();
+        return view('dashboard', [
+            'categories' => $categories,
+            'posts' => $posts,
+        ]);
     }
 
     /**
