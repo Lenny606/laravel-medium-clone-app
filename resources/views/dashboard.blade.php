@@ -38,6 +38,7 @@
                         @endforeach
                     </ul>
                 </div>
+                {{$posts->onEachSide(2)->links()}}
             </div>
         </div>
     </div>

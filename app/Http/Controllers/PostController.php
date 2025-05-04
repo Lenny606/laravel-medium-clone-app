@@ -14,7 +14,7 @@ class PostController extends Controller
     public function index()
     {
         $categories = Category::get();
-        $posts = Post::take(3)->get();
+        $posts = Post::take(3)->get()->paginate(5); //or ->simplePaginate(5)
         return view('dashboard', [
             'categories' => $categories,
             'posts' => $posts,
