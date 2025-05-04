@@ -14,6 +14,7 @@ php artisan tinker
 -- migrate
 -- migrate:rollback --step=1
 -- migrate:fresh --seed /wth seeder
+-- make:component <Name> --view
 
 
 ## UI 
