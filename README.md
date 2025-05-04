@@ -15,6 +15,7 @@ php artisan tinker
 -- migrate:rollback --step=1
 -- migrate:fresh --seed /wth seeder
 -- make:component <Name> --view
+-- storage:link /symlink to storege
 
 
 ## UI 
